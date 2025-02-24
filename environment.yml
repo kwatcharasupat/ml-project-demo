@@ -1,0 +1,25 @@
+name: "demo"
+
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - librosa
+  - tensorboard
+  - ruff
+  - lightning
+  - pip
+  - pip:
+      - torch
+      - torchaudio
+      - torchvision
+      - hydra-core
+      - torch_audiomentations
+      - fire
+      - rich

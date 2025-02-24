@@ -1,0 +1,8 @@
+defaults:
+  - models/pann
+  - loss/bce
+  - optimizer/adam
+
+hydra:
+  searchpath:
+    - "file://./configs"

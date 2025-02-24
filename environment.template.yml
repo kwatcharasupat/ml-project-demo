@@ -1,0 +1,25 @@
+name: "{ENV_NAME}"
+
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+
+dependencies:
+  - python={PYTHON_VERSION}
+  - numpy
+  - pandas
+  - librosa
+  - tensorboard
+  - ruff
+  - lightning
+  - pip
+  - pip:
+      - torch
+      - torchaudio
+      - torchvision
+      - hydra-core
+      - torch_audiomentations
+      - fire
+      - rich
